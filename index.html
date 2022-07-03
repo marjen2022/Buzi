@@ -34,6 +34,661 @@
   </nav>
 </head>
 <body>
+  <header class="header header--gift-certificate-disabled" role="banner">
+    <div class="header__inner">
+      <a href="#" class="mobileMenu-toggle" data-mobile-menu-toggle="menu" aria-controls="menu" aria-expanded="false">
+          <span class="mobileMenu-toggleIcon">Toggle menu</span>
+      </a>
+  
+      <div class="header-logo  header-logo--image   header-logo--center   ">
+          <a href="https://buzistore.com/">
+              <span class="header-logo-text">
+                  <img class="header-logo-image" src="https://cdn11.bigcommerce.com/s-mjqaafwwmi/images/stencil/80x80/weblogobuzi_1637924200__51282.original.png" alt="Buzi Store" title="Buzi Store">
+              </span>
+  </a>
+      </div>
+  
+      <div class="search search--no-quick-add-sku" id="quickSearch" aria-hidden="true" tabindex="-1" data-prevent-quick-search-close="">
+          <!-- snippet location forms_search -->
+  <form class="form" action="/search.php">
+      <fieldset class="form-fieldset">
+          <div class="form-field">
+              <label class="is-srOnly" for="search_query">Kërko</label>
+              <input class="form-input" data-search-quick="" name="search_query" id="search_query" data-error-message="Fusha e kërkimit nuk mund të jetë bosh." placeholder="Kërko me fjalë kyçe, markë ose SKU" autocomplete="off" autocorrect="off">
+              <button type="submit" class="search-button">
+                  <div class="search-button-icon">
+                      <svg>
+                          <use xlink:href="#icon-search"></use>
+                      </svg>
+                  </div>
+              </button>
+          </div>
+      </fieldset>
+  </form>
+  <section class="quickSearchResults" data-bind="html: results"></section>
+      </div>
+  
+  
+  
+   <div class="currency-home">
+          <li class="navUser-item">
+              <a style="color:#fff; font-size:14px;" class="navUser-action has-dropdown" href="#" data-dropdown="currencySelection" aria-controls="currencySelection" aria-expanded="false">  
+  
+              <img src="https://cdn11.bigcommerce.com/s-mjqaafwwmi/lib/flags/al.gif" border="0" alt="" role="presentation"> ALL <i class="icon" aria-hidden="true"><svg><use xlink:href="#icon-chevron-down"></use></svg></i>
+  
+              </a>
+  
+              
+              <ul class="dropdown-menu dropdown-menu--arrow-right" id="currencySelection" data-dropdown-content="" aria-hidden="true" tabindex="-1"> 
+                  <li class="dropdown-menu-item currency-menu-item">
+                     
+                      <a href="https://buzistore.com/?setCurrencyId=2">
+                          <img src="https://cdn11.bigcommerce.com/s-mjqaafwwmi/lib/flags/regions/eu.gif" border="0" alt="" role="presentation">
+                           <strong>Euro</strong>
+                    </a>
+                   
+                  </li>
+                  <li class="dropdown-menu-item currency-menu-item">
+                     
+                      <a href="https://buzistore.com/?setCurrencyId=3">
+                          <img src="https://cdn11.bigcommerce.com/s-mjqaafwwmi/lib/flags/us.gif" border="0" alt="" role="presentation">
+                           <strong>US Dollar</strong>
+                    </a>
+                   
+                  </li>
+              </ul>
+          </li>
+        
+      </div>
+  
+  
+      <nav class="navUser sticky">
+      <ul class="navUser-section navUser-section--alt">
+          <li class="navUser-item navUser-item--account">
+              <a class="navUser-action " href="/account.php"><span class="top-utilities-icon"><svg><use xlink:href="#icon-user"></use></svg></span><span class="navUser-text"> LLogari</span> </a>
+          </li>
+      </ul>
+  </nav>
+  
+  
+      <div class="navUser-item navUser-item--cart">
+      <a class="navUser-action" data-cart-preview="" data-dropdown="cart-preview-dropdown" data-options="align:right" href="/cart.php">
+          <span class="navUser-item-cartLabel"><span class="top-utilities-icon"><svg><use xlink:href="#icon-shopping-cart"></use></svg></span><span class="cartLabel"></span></span> <span class="countPill countPill--positive cart-quantity">0
+  </span>
+      </a>
+  
+      <div class="dropdown-menu" id="cart-preview-dropdown" data-dropdown-content="" aria-autoclose="false" aria-hidden="true">
+          <div class="side-cart side-cart-container">
+              <div class="side-cart-title">Shporta juaj</div>
+              <div class="side-cart-content"><div class="side-cart-loading" style="display: none;">
+      <div class="side-cart-loading-animation">
+              <div class="sk-three-bounce">
+          <div class="sk-child sk-bounce1"></div>
+          <div class="sk-child sk-bounce2"></div>
+          <div class="sk-child sk-bounce3"></div>
+      </div>
+      </div>
+  </div>
+  <p class="side-cart-placeholder" style="display: block;">Shporta juaj është bosh.<br></p><div></div>
+  </div>
+              <div class="side-cart-details">        <span class="side-cart-detail"><span>Artikuj:</span><span class="cart-quantity countPill--positive" id="side-cart-quantity">0
+  </span></span>
+          <span class="side-cart-detail"><span>Nëntotali:</span><span id="side-cart-subtotal">0Lek</span></span>
+          
+          
+          <!-- Paguaj me Paypal Code-->
+          
+          <div style="padding: 8px 4px; border-bottom: 1px solid #e5e5e5;" class="curerency-changer">
+              Paguaj me   <a href="https://buzistore.com/?setCurrencyId=2"> <img style="padding-left: 158px;" src="https://cdn11.bigcommerce.com/s-mjqaafwwmi/product_images/uploaded_images/paypal-logo.png"></a>
+              </div>
+          
+          <span class="side-cart-detail"><span>Totali:</span><span id="side-cart-total">0Lek</span></span>
+  </div>
+              <div class="side-cart-actions">        <div class="side-cart-action-buttons">
+          <a href="/cart.php" class="button">
+              Shikoni Shportën
+          </a>
+              <a class="button button--primary" href="/checkout" title="Klikoni këtu për të vazhduar tek arka">
+                  Arka 
+              </a>
+          </div>
+  </div>
+          </div>
+      </div>
+  </div>
+    </div>
+    <div class="header__bottom-nav ">
+      <div class="header__bottom-nav-inner">
+        <div class="navPages-container" id="menu" data-menu="" aria-hidden="true">
+            <nav class="navPages " data-options="">
+      <ul class="navPages-list navPages-list-depth-max simple">
+                              <li class="navPages-item">
+                                      <a class="navPages-action navPages-action-depth-max has-subMenu is-root" href="https://buzistore.com/fitness-1/" data-collapsible="navPages-3487" aria-controls="navPages-3487" aria-expanded="false">
+          FITNESS <i class="icon navPages-action-moreIcon" aria-hidden="true"><svg><use xlink:href="#icon-chevron-down"></use></svg></i>
+      </a>
+      <div class="navPage-subMenu navPage-subMenu-horizontal" id="navPages-3487" aria-hidden="true" tabindex="-1">
+      <ul class="navPage-subMenu-list">
+          <li class="navPage-subMenu-item-parent">
+              <a class="navPage-subMenu-action navPages-action navPages-action-depth-max" href="https://buzistore.com/fitness-1/">Produkte FITNESS</a>
+          </li>
+              <li class="navPage-subMenu-item-child">
+                      <a class="navPage-subMenu-action navPages-action" href="https://buzistore.com/bicikleta-statike-1/">Bicikleta Statike</a>
+              </li>
+              <li class="navPage-subMenu-item-child">
+                      <a class="navPage-subMenu-action navPages-action" href="https://buzistore.com/boshte-dhe-pesha-1/">Boshte dhe pesha</a>
+              </li>
+              <li class="navPage-subMenu-item-child">
+                      <a class="navPage-subMenu-action navPages-action" href="https://buzistore.com/doreza-palestre-1/">Doreza Palestre</a>
+              </li>
+              <li class="navPage-subMenu-item-child">
+                      <a class="navPage-subMenu-action navPages-action" href="https://buzistore.com/elektrostimulues-1/">Elektrostimulues</a>
+              </li>
+              <li class="navPage-subMenu-item-child">
+                      <a class="navPage-subMenu-action navPages-action" href="https://buzistore.com/fashion/">Fashion</a>
+              </li>
+              <li class="navPage-subMenu-item-child">
+                      <a class="navPage-subMenu-action navPages-action" href="https://buzistore.com/korse-1/">Korse</a>
+              </li>
+              <li class="navPage-subMenu-item-child">
+                      <a class="navPage-subMenu-action navPages-action" href="https://buzistore.com/litar-kercimi-1/">Litar kercimi</a>
+              </li>
+              <li class="navPage-subMenu-item-child">
+                      <a class="navPage-subMenu-action navPages-action" href="https://buzistore.com/joga-1/">Joga</a>
+              </li>
+              <li class="navPage-subMenu-item-child">
+                      <a class="navPage-subMenu-action navPages-action" href="https://buzistore.com/pajisje-force-multifunksionale-1/">Pajisje force multifunksionale</a>
+              </li>
+              <li class="navPage-subMenu-item-child">
+                      <a class="navPage-subMenu-action navPages-action" href="https://buzistore.com/pajisje-force-rezistente-1/">Pajisje force rezistente</a>
+              </li>
+              <li class="navPage-subMenu-item-child">
+                      <a class="navPage-subMenu-action navPages-action" href="https://buzistore.com/pajisje-per-muskuj-barku-1/">Pajisje per muskuj barku</a>
+              </li>
+              <li class="navPage-subMenu-item-child">
+                      <a class="navPage-subMenu-action navPages-action" href="https://buzistore.com/pista-vrapimi-1/">Pista vrapimi</a>
+              </li>
+              <li class="navPage-subMenu-item-child">
+                      <a class="navPage-subMenu-action navPages-action" href="https://buzistore.com/produkte-te-tjera-fitness/">Produkte te tjera fitness</a>
+              </li>
+              <li class="navPage-subMenu-item-child">
+                      <a class="navPage-subMenu-action navPages-action" href="https://buzistore.com/step-fitness-statike-1/">Step fitness statike</a>
+              </li>
+              <li class="navPage-subMenu-item-child">
+                      <a class="navPage-subMenu-action navPages-action" href="https://buzistore.com/stol-shtange-girash-1/">Stol Shtange &amp; Girash</a>
+              </li>
+              <li class="navPage-subMenu-item-child">
+                      <a class="navPage-subMenu-action navPages-action" href="https://buzistore.com/trampolina-1/">Trampolina</a>
+              </li>
+              <li class="navPage-subMenu-item-child">
+                      <a class="navPage-subMenu-action navPages-action" href="https://buzistore.com/veshje-dobesimi-sauna-1/">Veshje dobesimi sauna</a>
+              </li>
+      </ul>
+  </div>
+                              </li>
+                              <li class="navPages-item">
+                                      <a class="navPages-action navPages-action-depth-max has-subMenu is-root" href="https://buzistore.com/auto/" data-collapsible="navPages-3493" aria-controls="navPages-3493" aria-expanded="false">
+          AUTO <i class="icon navPages-action-moreIcon" aria-hidden="true"><svg><use xlink:href="#icon-chevron-down"></use></svg></i>
+      </a>
+      <div class="navPage-subMenu navPage-subMenu-horizontal" id="navPages-3493" aria-hidden="true" tabindex="-1">
+      <ul class="navPage-subMenu-list">
+          <li class="navPage-subMenu-item-parent">
+              <a class="navPage-subMenu-action navPages-action navPages-action-depth-max" href="https://buzistore.com/auto/">Produkte AUTO</a>
+          </li>
+              <li class="navPage-subMenu-item-child">
+                      <a class="navPage-subMenu-action navPages-action" href="https://buzistore.com/aksesore-elektronike/">Aksesorë Elektronikë</a>
+              </li>
+              <li class="navPage-subMenu-item-child">
+                      <a class="navPage-subMenu-action navPages-action" href="https://buzistore.com/aksesore-te-tjere-1/">Aksesore te tjere</a>
+              </li>
+              <li class="navPage-subMenu-item-child">
+                      <a class="navPage-subMenu-action navPages-action" href="https://buzistore.com/aroma-2/">Aroma</a>
+              </li>
+              <li class="navPage-subMenu-item-child">
+                      <a class="navPage-subMenu-action navPages-action" href="https://buzistore.com/audio-auto/">Audio Auto</a>
+              </li>
+              <li class="navPage-subMenu-item-child">
+                      <a class="navPage-subMenu-action navPages-action" href="https://buzistore.com/bluetooth-receiver-mp3/">Bluetooth receiver mp3</a>
+              </li>
+              <li class="navPage-subMenu-item-child">
+                      <a class="navPage-subMenu-action navPages-action" href="https://buzistore.com/body-kit/">Body Kit</a>
+              </li>
+              <li class="navPage-subMenu-item-child">
+                      <a class="navPage-subMenu-action navPages-action" href="https://buzistore.com/dekorimi-i-brendshem/">Dekorimi i brëndshëm</a>
+              </li>
+              <li class="navPage-subMenu-item-child">
+                      <a class="navPage-subMenu-action navPages-action" href="https://buzistore.com/dekorimi-i-jashtem/">Dekorimi i jashtëm</a>
+              </li>
+              <li class="navPage-subMenu-item-child">
+                      <a class="navPage-subMenu-action navPages-action" href="https://buzistore.com/emergjence-siguria-auto/">Emergjencë &amp; Siguria Auto</a>
+              </li>
+              <li class="navPage-subMenu-item-child">
+                      <a class="navPage-subMenu-action navPages-action" href="https://buzistore.com/inverter-12v-220v/">Inverter 12v-220v</a>
+              </li>
+              <li class="navPage-subMenu-item-child">
+                      <a class="navPage-subMenu-action navPages-action" href="https://buzistore.com/karikues-telefoni-auto/">Karikues telefoni Auto</a>
+              </li>
+              <li class="navPage-subMenu-item-child">
+                      <a class="navPage-subMenu-action navPages-action" href="https://buzistore.com/kompresor-12v/">Kompresor 12v</a>
+              </li>
+              <li class="navPage-subMenu-item-child">
+                      <a class="navPage-subMenu-action navPages-action" href="https://buzistore.com/llamba-12v/">Llamba 12v</a>
+              </li>
+              <li class="navPage-subMenu-item-child">
+                      <a class="navPage-subMenu-action navPages-action" href="https://buzistore.com/ndricues-te-brendshem-12v/">Ndricues të Brëndshëm 12v</a>
+              </li>
+              <li class="navPage-subMenu-item-child">
+                      <a class="navPage-subMenu-action navPages-action" href="https://buzistore.com/ndricues-te-jashtem-12v/">Ndricues të Jashtëm 12v</a>
+              </li>
+              <li class="navPage-subMenu-item-child">
+                      <a class="navPage-subMenu-action navPages-action" href="https://buzistore.com/organizues-sendesh/">Organizues Sendesh</a>
+              </li>
+              <li class="navPage-subMenu-item-child">
+                      <a class="navPage-subMenu-action navPages-action" href="https://buzistore.com/pastrimi-auto/">Pastrimi Auto</a>
+              </li>
+              <li class="navPage-subMenu-item-child">
+                      <a class="navPage-subMenu-action navPages-action" href="https://buzistore.com/pedana/">Pedana</a>
+              </li>
+              <li class="navPage-subMenu-item-child">
+                      <a class="navPage-subMenu-action navPages-action" href="https://buzistore.com/radio-cd/">Radio Cd</a>
+              </li>
+              <li class="navPage-subMenu-item-child">
+                      <a class="navPage-subMenu-action navPages-action" href="https://buzistore.com/tapete-auto/">Tapete Auto</a>
+              </li>
+              <li class="navPage-subMenu-item-child">
+                      <a class="navPage-subMenu-action navPages-action" href="https://buzistore.com/vaj-lubricant-1/">Vaj Lubricant</a>
+              </li>
+              <li class="navPage-subMenu-item-child">
+                      <a class="navPage-subMenu-action navPages-action" href="https://buzistore.com/veshje-sedile/">Veshje Sedile</a>
+              </li>
+      </ul>
+  </div>
+                              </li>
+                              <li class="navPages-item">
+                                      <a class="navPages-action navPages-action-depth-max has-subMenu is-root" href="https://buzistore.com/flamingo/" data-collapsible="navPages-3398" aria-controls="navPages-3398" aria-expanded="false">
+          FLAMINGO <i class="icon navPages-action-moreIcon" aria-hidden="true"><svg><use xlink:href="#icon-chevron-down"></use></svg></i>
+      </a>
+      <div class="navPage-subMenu navPage-subMenu-horizontal" id="navPages-3398" aria-hidden="true" tabindex="-1">
+      <ul class="navPage-subMenu-list">
+          <li class="navPage-subMenu-item-parent">
+              <a class="navPage-subMenu-action navPages-action navPages-action-depth-max" href="https://buzistore.com/flamingo/">Produkte FLAMINGO</a>
+          </li>
+              <li class="navPage-subMenu-item-child">
+                      <a class="navPage-subMenu-action navPages-action" href="https://buzistore.com/aroma/">Aroma flamingo</a>
+              </li>
+              <li class="navPage-subMenu-item-child">
+                      <a class="navPage-subMenu-action navPages-action" href="https://buzistore.com/boje-spray/">Bojë spray</a>
+              </li>
+              <li class="navPage-subMenu-item-child">
+                      <a class="navPage-subMenu-action navPages-action" href="https://buzistore.com/eficenca-motorke/">Efiçenca Motorike</a>
+              </li>
+              <li class="navPage-subMenu-item-child">
+                      <a class="navPage-subMenu-action navPages-action" href="https://buzistore.com/efieenca-motorike/">Efieenca Motorike</a>
+              </li>
+              <li class="navPage-subMenu-item-child">
+                      <a class="navPage-subMenu-action navPages-action" href="https://buzistore.com/mbrojtesit-e-bojes/">Mbrojtësit e Bojës</a>
+              </li>
+              <li class="navPage-subMenu-item-child">
+                      <a class="navPage-subMenu-action navPages-action" href="https://buzistore.com/solucione-interior-exterior/">Solucione Interior-Exterior</a>
+              </li>
+              <li class="navPage-subMenu-item-child">
+                      <a class="navPage-subMenu-action navPages-action" href="https://buzistore.com/solucione-mirmbatje/">Solucione Mirmbatje</a>
+              </li>
+              <li class="navPage-subMenu-item-child">
+                      <a class="navPage-subMenu-action navPages-action" href="https://buzistore.com/solucione-per-gomat/">Solucione për Gomat</a>
+              </li>
+              <li class="navPage-subMenu-item-child">
+                      <a class="navPage-subMenu-action navPages-action" href="https://buzistore.com/solucione-radiatori/">Solucione Radiatori</a>
+              </li>
+              <li class="navPage-subMenu-item-child">
+                      <a class="navPage-subMenu-action navPages-action" href="https://buzistore.com/spray-plastik/">Spray Plastik</a>
+              </li>
+      </ul>
+  </div>
+                              </li>
+                              <li class="navPages-item">
+                                      <a class="navPages-action navPages-action-depth-max has-subMenu is-root" href="https://buzistore.com/kamping-military-survival-1/" data-collapsible="navPages-3490" aria-controls="navPages-3490" aria-expanded="false">
+          KAMPING , MILITARY &amp; SURVIVAL <i class="icon navPages-action-moreIcon" aria-hidden="true"><svg><use xlink:href="#icon-chevron-down"></use></svg></i>
+      </a>
+      <div class="navPage-subMenu navPage-subMenu-horizontal" id="navPages-3490" aria-hidden="true" tabindex="-1">
+      <ul class="navPage-subMenu-list">
+          <li class="navPage-subMenu-item-parent">
+              <a class="navPage-subMenu-action navPages-action navPages-action-depth-max" href="https://buzistore.com/kamping-military-survival-1/">Produkte KAMPING , MILITARY &amp; SURVIVAL</a>
+          </li>
+              <li class="navPage-subMenu-item-child">
+                      <a class="navPage-subMenu-action navPages-action" href="https://buzistore.com/cadra-kampingu-1/">Cadra Kampingu</a>
+              </li>
+              <li class="navPage-subMenu-item-child">
+                      <a class="navPage-subMenu-action navPages-action" href="https://buzistore.com/elektrik-dore-1/">Elektrik dore</a>
+              </li>
+              <li class="navPage-subMenu-item-child">
+                      <a class="navPage-subMenu-action navPages-action" href="https://buzistore.com/pajisje-veshje-kepuce-canta/">Pajisje ,Veshje , Kepuce &amp; Canta</a>
+              </li>
+              <li class="navPage-subMenu-item-child">
+                      <a class="navPage-subMenu-action navPages-action" href="https://buzistore.com/piknik-1/">Piknik</a>
+              </li>
+      </ul>
+  </div>
+                              </li>
+                              <li class="navPages-item">
+                                      <a class="navPages-action navPages-action-depth-max has-subMenu is-root" href="https://buzistore.com/kujdesi-personal/" data-collapsible="navPages-3488" aria-controls="navPages-3488" aria-expanded="false">
+          KUJDESI PERSONAL <i class="icon navPages-action-moreIcon" aria-hidden="true"><svg><use xlink:href="#icon-chevron-down"></use></svg></i>
+      </a>
+      <div class="navPage-subMenu navPage-subMenu-horizontal" id="navPages-3488" aria-hidden="true" tabindex="-1">
+      <ul class="navPage-subMenu-list">
+          <li class="navPage-subMenu-item-parent">
+              <a class="navPage-subMenu-action navPages-action navPages-action-depth-max" href="https://buzistore.com/kujdesi-personal/">Produkte KUJDESI PERSONAL</a>
+          </li>
+              <li class="navPage-subMenu-item-child">
+                      <a class="navPage-subMenu-action navPages-action" href="https://buzistore.com/kujdesi-per-trupin-1/">Kujdesi per trupin </a>
+              </li>
+              <li class="navPage-subMenu-item-child">
+                      <a class="navPage-subMenu-action navPages-action" href="https://buzistore.com/kujdesi-personal-femra-1/">Kujdesi Personal Femra</a>
+              </li>
+              <li class="navPage-subMenu-item-child">
+                      <a class="navPage-subMenu-action navPages-action" href="https://buzistore.com/kujdesi-personal-meshkuj-1/">Kujdesi Personal Meshkuj </a>
+              </li>
+              <li class="navPage-subMenu-item-child">
+                      <a class="navPage-subMenu-action navPages-action" href="https://buzistore.com/massage-relax-1/">Massage &amp; relax</a>
+              </li>
+              <li class="navPage-subMenu-item-child">
+                      <a class="navPage-subMenu-action navPages-action" href="https://buzistore.com/shendeti-1/">Shendeti </a>
+              </li>
+      </ul>
+  </div>
+                              </li>
+                              <li class="navPages-item">
+                                      <a class="navPages-action navPages-action-depth-max has-subMenu is-root" href="https://buzistore.com/lodra-femije/" data-collapsible="navPages-3491" aria-controls="navPages-3491" aria-expanded="false">
+          LODRA &amp; FEMIJE <i class="icon navPages-action-moreIcon" aria-hidden="true"><svg><use xlink:href="#icon-chevron-down"></use></svg></i>
+      </a>
+      <div class="navPage-subMenu navPage-subMenu-horizontal" id="navPages-3491" aria-hidden="true" tabindex="-1">
+      <ul class="navPage-subMenu-list">
+          <li class="navPage-subMenu-item-parent">
+              <a class="navPage-subMenu-action navPages-action navPages-action-depth-max" href="https://buzistore.com/lodra-femije/">Produkte LODRA &amp; FEMIJE</a>
+          </li>
+              <li class="navPage-subMenu-item-child">
+                      <a class="navPage-subMenu-action navPages-action" href="https://buzistore.com/dron-1/">Dron</a>
+              </li>
+              <li class="navPage-subMenu-item-child">
+                      <a class="navPage-subMenu-action navPages-action" href="https://buzistore.com/karroca-ndenjese-1/">Karroca &amp; Ndenjese </a>
+              </li>
+              <li class="navPage-subMenu-item-child">
+                      <a class="navPage-subMenu-action navPages-action" href="https://buzistore.com/lodra-1/">Lodra </a>
+              </li>
+              <li class="navPage-subMenu-item-child">
+                      <a class="navPage-subMenu-action navPages-action" href="https://buzistore.com/makina-per-femije-1/">Makina per femije </a>
+              </li>
+      </ul>
+  </div>
+                              </li>
+                              <li class="navPages-item">
+                                      <a class="navPages-action navPages-action-depth-max has-subMenu is-root" href="https://buzistore.com/sport/" data-collapsible="navPages-3489" aria-controls="navPages-3489" aria-expanded="false">
+          SPORT <i class="icon navPages-action-moreIcon" aria-hidden="true"><svg><use xlink:href="#icon-chevron-down"></use></svg></i>
+      </a>
+      <div class="navPage-subMenu navPage-subMenu-horizontal" id="navPages-3489" aria-hidden="true" tabindex="-1">
+      <ul class="navPage-subMenu-list">
+          <li class="navPage-subMenu-item-parent">
+              <a class="navPage-subMenu-action navPages-action navPages-action-depth-max" href="https://buzistore.com/sport/">Produkte SPORT</a>
+          </li>
+              <li class="navPage-subMenu-item-child">
+                      <a class="navPage-subMenu-action navPages-action" href="https://buzistore.com/basketboll-1/">Basketboll</a>
+              </li>
+              <li class="navPage-subMenu-item-child">
+                      <a class="navPage-subMenu-action navPages-action" href="https://buzistore.com/boksi-1/">Boksi</a>
+              </li>
+              <li class="navPage-subMenu-item-child">
+                      <a class="navPage-subMenu-action navPages-action" href="https://buzistore.com/ciklizem-1/">Ciklizem </a>
+              </li>
+              <li class="navPage-subMenu-item-child">
+                      <a class="navPage-subMenu-action navPages-action" href="https://buzistore.com/futboll-1/">Futboll</a>
+              </li>
+              <li class="navPage-subMenu-item-child">
+                      <a class="navPage-subMenu-action navPages-action" href="https://buzistore.com/peshkim-1/">Peshkim </a>
+              </li>
+              <li class="navPage-subMenu-item-child">
+                      <a class="navPage-subMenu-action navPages-action" href="https://buzistore.com/sporte-te-tjera-1/">Sporte te tjera</a>
+              </li>
+              <li class="navPage-subMenu-item-child">
+                      <a class="navPage-subMenu-action navPages-action" href="https://buzistore.com/volejboll-1/">Volejboll</a>
+              </li>
+      </ul>
+  </div>
+                              </li>
+                              <li class="navPages-item">
+                                      <a class="navPages-action navPages-action-depth-max has-subMenu is-root" href="https://buzistore.com/vegla-pune-1/" data-collapsible="navPages-3494" aria-controls="navPages-3494" aria-expanded="false">
+          VEGLA PUNE <i class="icon navPages-action-moreIcon" aria-hidden="true"><svg><use xlink:href="#icon-chevron-down"></use></svg></i>
+      </a>
+      <div class="navPage-subMenu navPage-subMenu-horizontal" id="navPages-3494" aria-hidden="true" tabindex="-1">
+      <ul class="navPage-subMenu-list">
+          <li class="navPage-subMenu-item-parent">
+              <a class="navPage-subMenu-action navPages-action navPages-action-depth-max" href="https://buzistore.com/vegla-pune-1/">Produkte VEGLA PUNE</a>
+          </li>
+              <li class="navPage-subMenu-item-child">
+                      <a class="navPage-subMenu-action navPages-action" href="https://buzistore.com/set-kriket-1/">Set Kriket</a>
+              </li>
+              <li class="navPage-subMenu-item-child">
+                      <a class="navPage-subMenu-action navPages-action" href="https://buzistore.com/set-veglash-1/">Set veglash </a>
+              </li>
+              <li class="navPage-subMenu-item-child">
+                      <a class="navPage-subMenu-action navPages-action" href="https://buzistore.com/te-tjera-1/">Te tjera</a>
+              </li>
+              <li class="navPage-subMenu-item-child">
+                      <a class="navPage-subMenu-action navPages-action" href="https://buzistore.com/trapan-vidator-1/">Trapan &amp; Vidator</a>
+              </li>
+      </ul>
+  </div>
+                              </li>
+                              <li class="navPages-item">
+                                      <a class="navPages-action navPages-action-depth-max has-subMenu is-root" href="https://buzistore.com/kamera-sisteme-sigurie/" data-collapsible="navPages-3411" aria-controls="navPages-3411" aria-expanded="false">
+          KAMERA &amp; SISTEME SIGURIE <i class="icon navPages-action-moreIcon" aria-hidden="true"><svg><use xlink:href="#icon-chevron-down"></use></svg></i>
+      </a>
+      <div class="navPage-subMenu navPage-subMenu-horizontal" id="navPages-3411" aria-hidden="true" tabindex="-1">
+      <ul class="navPage-subMenu-list">
+          <li class="navPage-subMenu-item-parent">
+              <a class="navPage-subMenu-action navPages-action navPages-action-depth-max" href="https://buzistore.com/kamera-sisteme-sigurie/">Produkte KAMERA &amp; SISTEME SIGURIE</a>
+          </li>
+              <li class="navPage-subMenu-item-child">
+                      <a class="navPage-subMenu-action navPages-action" href="https://buzistore.com/alarme/">Alarme</a>
+              </li>
+              <li class="navPage-subMenu-item-child">
+                      <a class="navPage-subMenu-action navPages-action" href="https://buzistore.com/kamera/">Kamera</a>
+              </li>
+              <li class="navPage-subMenu-item-child">
+                      <a class="navPage-subMenu-action navPages-action" href="https://buzistore.com/kamera-smart-wifi/">Kamera smart Wifi &amp; sisteme</a>
+              </li>
+              <li class="navPage-subMenu-item-child">
+                      <a class="navPage-subMenu-action navPages-action" href="https://buzistore.com/kasaforte/">Kasaforte</a>
+              </li>
+              <li class="navPage-subMenu-item-child">
+                      <a class="navPage-subMenu-action navPages-action" href="https://buzistore.com/pajisje-sigurie-per-objekte/">Pajisje sigurie per objekte</a>
+              </li>
+              <li class="navPage-subMenu-item-child">
+                      <a class="navPage-subMenu-action navPages-action" href="https://buzistore.com/skanues-parash/">Skanues Parash</a>
+              </li>
+      </ul>
+  </div>
+                              </li>
+                              <li class="navPages-item">
+                                      <a class="navPages-action navPages-action-depth-max has-subMenu is-root" href="https://buzistore.com/shtepi/" data-collapsible="navPages-3388" aria-controls="navPages-3388" aria-expanded="false">
+          SHTEPI <i class="icon navPages-action-moreIcon" aria-hidden="true"><svg><use xlink:href="#icon-chevron-down"></use></svg></i>
+      </a>
+      <div class="navPage-subMenu navPage-subMenu-horizontal" id="navPages-3388" aria-hidden="true" tabindex="-1">
+      <ul class="navPage-subMenu-list">
+          <li class="navPage-subMenu-item-parent">
+              <a class="navPage-subMenu-action navPages-action navPages-action-depth-max" href="https://buzistore.com/shtepi/">Produkte SHTEPI</a>
+          </li>
+              <li class="navPage-subMenu-item-child">
+                      <a class="navPage-subMenu-action navPages-action" href="https://buzistore.com/pajisje-per-kopesht/">Artikuj për kopësht</a>
+              </li>
+              <li class="navPage-subMenu-item-child">
+                      <a class="navPage-subMenu-action navPages-action" href="https://buzistore.com/dekore/">Dekore</a>
+              </li>
+              <li class="navPage-subMenu-item-child">
+                      <a class="navPage-subMenu-action navPages-action" href="https://buzistore.com/dekore-festive1/">Dekore Festive</a>
+              </li>
+              <li class="navPage-subMenu-item-child">
+                      <a class="navPage-subMenu-action navPages-action" href="https://buzistore.com/kuzhine/">Kuzhinë </a>
+              </li>
+              <li class="navPage-subMenu-item-child">
+                      <a class="navPage-subMenu-action navPages-action" href="https://buzistore.com/ngrohese/">Ngrohëse </a>
+              </li>
+              <li class="navPage-subMenu-item-child">
+                      <a class="navPage-subMenu-action navPages-action" href="https://buzistore.com/organizues-hapesire/">Organizues hapësire</a>
+              </li>
+              <li class="navPage-subMenu-item-child">
+                      <a class="navPage-subMenu-action navPages-action" href="https://buzistore.com/elektroshtepiake/">Pajisje Elektrike &amp; Elektronike</a>
+              </li>
+              <li class="navPage-subMenu-item-child">
+                      <a class="navPage-subMenu-action navPages-action" href="https://buzistore.com/pastrim/">Pastrim </a>
+              </li>
+              <li class="navPage-subMenu-item-child">
+                      <a class="navPage-subMenu-action navPages-action" href="https://buzistore.com/tualet/">Tualet </a>
+              </li>
+      </ul>
+  </div>
+                              </li>
+                              <li class="navPages-item">
+                                      <a class="navPages-action navPages-action-depth-max has-subMenu is-root" href="https://buzistore.com/elektrike/" data-collapsible="navPages-3371" aria-controls="navPages-3371" aria-expanded="false">
+          ELEKTRIKE <i class="icon navPages-action-moreIcon" aria-hidden="true"><svg><use xlink:href="#icon-chevron-down"></use></svg></i>
+      </a>
+      <div class="navPage-subMenu navPage-subMenu-horizontal" id="navPages-3371" aria-hidden="true" tabindex="-1">
+      <ul class="navPage-subMenu-list">
+          <li class="navPage-subMenu-item-parent">
+              <a class="navPage-subMenu-action navPages-action navPages-action-depth-max" href="https://buzistore.com/elektrike/">Produkte ELEKTRIKE</a>
+          </li>
+              <li class="navPage-subMenu-item-child">
+                      <a class="navPage-subMenu-action navPages-action" href="https://buzistore.com/abazhyre/">Abazhyre</a>
+              </li>
+              <li class="navPage-subMenu-item-child">
+                      <a class="navPage-subMenu-action navPages-action" href="https://buzistore.com/llamba-led/">Llamba Led</a>
+              </li>
+              <li class="navPage-subMenu-item-child">
+                      <a class="navPage-subMenu-action navPages-action" href="https://buzistore.com/ndricues-inteligjente-me-panel-diellor/">Ndricues inteligjente me Panel Diellor</a>
+              </li>
+              <li class="navPage-subMenu-item-child">
+                      <a class="navPage-subMenu-action navPages-action" href="https://buzistore.com/ndricues-led/">Ndricues led</a>
+              </li>
+              <li class="navPage-subMenu-item-child">
+                      <a class="navPage-subMenu-action navPages-action" href="https://buzistore.com/ndricues-me-bateri/">Ndricues me bateri</a>
+              </li>
+              <li class="navPage-subMenu-item-child">
+                      <a class="navPage-subMenu-action navPages-action" href="https://buzistore.com/priza-celesa-automat/">Priza Celesa &amp; automat</a>
+              </li>
+              <li class="navPage-subMenu-item-child">
+                      <a class="navPage-subMenu-action navPages-action" href="https://buzistore.com/prozhektore-led/">Prozhektore Led</a>
+              </li>
+              <li class="navPage-subMenu-item-child">
+                      <a class="navPage-subMenu-action navPages-action" href="https://buzistore.com/robot-spote-led/">Robot Spote Led</a>
+              </li>
+              <li class="navPage-subMenu-item-child">
+                      <a class="navPage-subMenu-action navPages-action" href="https://buzistore.com/spote-led/">Spote led</a>
+              </li>
+              <li class="navPage-subMenu-item-child">
+                      <a class="navPage-subMenu-action navPages-action" href="https://buzistore.com/transformatore/">Transformatore</a>
+              </li>
+              <li class="navPage-subMenu-item-child">
+                      <a class="navPage-subMenu-action navPages-action" href="https://buzistore.com/zgjatues/">Zgjatues</a>
+              </li>
+      </ul>
+  </div>
+                              </li>
+                              <li class="navPages-item">
+                                      <a class="navPages-action navPages-action-depth-max has-subMenu is-root" href="https://buzistore.com/kujdesi-ndaj-kafsheve/" data-collapsible="navPages-3397" aria-controls="navPages-3397" aria-expanded="false">
+          Kujdesi Ndaj Kafsheve <i class="icon navPages-action-moreIcon" aria-hidden="true"><svg><use xlink:href="#icon-chevron-down"></use></svg></i>
+      </a>
+      <div class="navPage-subMenu navPage-subMenu-horizontal" id="navPages-3397" aria-hidden="true" tabindex="-1">
+      <ul class="navPage-subMenu-list">
+          <li class="navPage-subMenu-item-parent">
+              <a class="navPage-subMenu-action navPages-action navPages-action-depth-max" href="https://buzistore.com/kujdesi-ndaj-kafsheve/">Produkte Kujdesi Ndaj Kafsheve</a>
+          </li>
+              <li class="navPage-subMenu-item-child">
+                      <a class="navPage-subMenu-action navPages-action" href="https://buzistore.com/aksesore-per-kafshet/">Aksesore per kafshet</a>
+              </li>
+              <li class="navPage-subMenu-item-child">
+                      <a class="navPage-subMenu-action navPages-action" href="https://buzistore.com/konteniera-ushqimi-dhe-uji/">Konteniera ushqimi dhe uji</a>
+              </li>
+              <li class="navPage-subMenu-item-child">
+                      <a class="navPage-subMenu-action navPages-action" href="https://buzistore.com/ulese-per-kafshe-shtepiake-1/">Ulese per kafshe shtepiake</a>
+              </li>
+              <li class="navPage-subMenu-item-child">
+                      <a class="navPage-subMenu-action navPages-action" href="https://buzistore.com/veshje-dhe-qafore/">Veshje dhe qafore</a>
+              </li>
+      </ul>
+  </div>
+                              </li>
+                   <li class="navPages-item navPages-item-page">
+                       <a class="navPages-action" href="https://buzistore.com/kontakt/">Kontakt</a>
+                   </li>
+      </ul>
+      <ul class="navPages-list navPages-list--user">
+              <li class="navPages-item">
+                  <a class="navPages-action has-subMenu" href="#" data-collapsible="navPages-currency" aria-controls="navPages-currency" aria-expanded="false">
+                      ALL <i class="icon navPages-action-moreIcon" aria-hidden="true"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-chevron-down"></use></svg></i>
+                  </a>
+                  <div class="navPage-subMenu" id="navPages-currency" aria-hidden="true" tabindex="-1">
+                      <ul class="navPage-subMenu-list">
+                              <li class="navPage-subMenu-item currency-menu-item">
+                                  <img src="https://cdn11.bigcommerce.com/s-mjqaafwwmi/lib/flags/regions/eu.gif" border="0" alt="" role="presentation">
+                                  <a class="navPage-subMenu-action navPages-action" href="https://buzistore.com/?setCurrencyId=2">
+                                          Euro
+                                  </a>
+                              </li>
+                              <li class="navPage-subMenu-item currency-menu-item">
+                                  <img src="https://cdn11.bigcommerce.com/s-mjqaafwwmi/lib/flags/al.gif" border="0" alt="" role="presentation">
+                                  <a class="navPage-subMenu-action navPages-action" href="https://buzistore.com/?setCurrencyId=1">
+                                          <strong>Lek</strong>
+                                  </a>
+                              </li>
+                              <li class="navPage-subMenu-item currency-menu-item">
+                                  <img src="https://cdn11.bigcommerce.com/s-mjqaafwwmi/lib/flags/us.gif" border="0" alt="" role="presentation">
+                                  <a class="navPage-subMenu-action navPages-action" href="https://buzistore.com/?setCurrencyId=3">
+                                          US Dollar
+                                  </a>
+                              </li>
+                      </ul>
+                  </div>
+              </li>
+              <li class="navPages-item">
+                  <a class="navPages-action" href="/login.php">Logohu</a>
+                      ose <a class="navPages-action" href="/login.php?action=create_account">Regjistrohu</a>
+              </li>
+      </ul>
+  </nav>
+        </div>
+        <!--<nav class="navUser sticky">
+      <ul class="navUser-section">
+              <li class="navUser-item">
+          <a class="navUser-action has-dropdown" href="#" data-dropdown="currencySelection" aria-controls="currencySelection" aria-expanded="false">
+              ALL <i class="icon" aria-hidden="true"><svg><use xlink:href="#icon-chevron-down" /></svg></i>
+          </a>
+          <ul class="dropdown-menu dropdown-menu--arrow-right" id="currencySelection" data-dropdown-content aria-hidden="true" tabindex="-1">
+              <li class="dropdown-menu-item currency-menu-item">
+                  <img src="https://cdn11.bigcommerce.com/s-mjqaafwwmi/lib/flags/regions/eu.gif" border="0" alt="" role="presentation" />
+                  <a href="https://buzistore.com/?setCurrencyId=2">
+                      Euro
+                  </a>
+              </li>
+              <li class="dropdown-menu-item currency-menu-item">
+                  <img src="https://cdn11.bigcommerce.com/s-mjqaafwwmi/lib/flags/al.gif" border="0" alt="" role="presentation" />
+                  <a href="https://buzistore.com/?setCurrencyId=1">
+                      <strong>Lek</strong>
+                  </a>
+              </li>
+              <li class="dropdown-menu-item currency-menu-item">
+                  <img src="https://cdn11.bigcommerce.com/s-mjqaafwwmi/lib/flags/us.gif" border="0" alt="" role="presentation" />
+                  <a href="https://buzistore.com/?setCurrencyId=3">
+                      US Dollar
+                  </a>
+              </li>
+          </ul>
+      </li>
+              <li class="navUser-item">
+                  <a class="navUser-action has-dropdown" href="/wishlist.php">Listat Tuaja </a>-->
+              
+                  
+  
+      </div>
+    </div>
+    
 
 
     <h1></h1>
